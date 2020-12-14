@@ -1,0 +1,17 @@
+{
+	"name": "1337XP converter",
+	"version": "1.0",
+	"description": "Devide XP By 42 to get the usual XP; before the migration to the new curriculum",
+	"permissions": ["tabs", "*://projects.intra.42.fr/projects/42cursus-*", "*://projects.intra.42.fr/42cursus-*/*"],
+	"content_scripts": [
+		{
+			"matches": ["*://projects.intra.42.fr/projects/42cursus-*", "*://projects.intra.42.fr/42cursus-*/*"],
+			"js": ["script.js"]
+		}
+	],
+	"page_action": {
+		"default_icon": { "16": "1337.png" }
+	},
+	"icons": { "16": "1337.png" },
+	"manifest_version": 2
+}
